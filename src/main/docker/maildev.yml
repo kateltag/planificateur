@@ -1,0 +1,7 @@
+version: '2'
+services:
+  maildev:
+    image: maildev/maildev
+    ports:
+      - 1080:1080 # interface web (http://localhost:1080)
+      - 25:1025 # port SMTP (pour spring.mail.port)
